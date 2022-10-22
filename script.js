@@ -36,8 +36,10 @@ function enableCam(event) {
     });
 }
 
-function predictWebcam() {
-}
+let model = undefined;
 
-var model = true;
-demosSection.classList.remove('invisible');
+cocoSsd.load().then(function (loadedModel) {
+    model = loadedModel;
+
+    demosSection.classList.remove('invisible');
+});
