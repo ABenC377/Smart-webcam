@@ -1,9 +1,19 @@
 body {
     font-family: Georgia, sans-serif;
     margin: 3em;
+    color: #A4A1A1;
 }
 
 h1 {
     font-style: italic;
-    color: #FF6F00;
+    color: #4ADBE1;
+}
+
+video {
+    display: block;
+}
+
+section {
+    opacity: 1;
+    transition: opacity 500ms ease-in-out;
 }
